@@ -352,6 +352,7 @@ void loop() {
          pressedButton = 3 * row + col;
          if (foundColumn == LOW && pressedButton != ENTER && game_status > 0){
             chosenLetter = selectLetter();
+            Serial.println(chosenLetter);
             delay(10);
          } else if (foundColumn == LOW && pressedButton == ENTER && (game_status == 0 || game_status == 2)) {
             switch (game_status) {
