@@ -338,10 +338,6 @@ int letterSubmittedCases(char chosenLetter) {
   return 0;
 }
 
-void keyboardControl() {
-  
-}
-
 void loop() {
    if (game_status == 0) {
      displayMessage("Apasa ENTER pt joc", 0);
